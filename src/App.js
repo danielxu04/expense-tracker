@@ -1,8 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Expense from "./components/Expense";
+
 function App() {
   return ( <>
-  <h1>Expense Tracker!</h1>
+  
+  <Expense />
+  
   </>
   );
 }
