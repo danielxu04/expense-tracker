@@ -15,18 +15,12 @@
 }
 .expense-item h2{
   color: #EE6983;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 2rem;
   padding-left: 5%;
   flex: 1;
   flex-direction: column;
   }
-
-.expense-date{
-  color: #EE6983;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
 
 .expense-description {
     display: flex;
@@ -56,10 +50,6 @@
     align-items: center;
     justify-content: flex-start;
     flex: 1;
-  }
-
-  .expense-date{
-    font-size: 1.2rem;
   }
   
   .expense-item{
