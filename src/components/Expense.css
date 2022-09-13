@@ -1,0 +1,48 @@
+/**************************** EXPENSE ITEM CONTAINER **************************/
+.expense-item{
+    position: relative;
+    z-index: 10;
+    background-color: #FFC4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 12px rgba(133, 14, 53, 0.25);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #EE6983;
+    border-radius: 20px;
+}
+.expense-item h2{
+  color: #EE6983;
+  font-size: 1rem;
+  margin: 0 2rem;
+  padding-left: 5%;
+  flex: 1;
+  flex-direction: column;
+  }
+
+.expense-date{
+  color: #C06C84;
+}
+
+.expense-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .expense-price {
+    color: #F6F6F6;
+    background-color: #EE6983;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid #FFE2E2;
+    border-radius: 15px;
+  }
+  
