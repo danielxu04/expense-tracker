@@ -23,7 +23,9 @@
   }
 
 .expense-date{
-  color: #C06C84;
+  color: #EE6983;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .expense-description {
