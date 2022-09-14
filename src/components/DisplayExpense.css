@@ -1,0 +1,8 @@
+.display-expenses {
+    background-color: #FFB6B9;
+    box-shadow: 0 8px 10px rgba(133, 14, 53, 0.3);
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 50rem;
+    border-radius: 30px;
+  }

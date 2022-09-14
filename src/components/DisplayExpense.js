@@ -1,11 +1,12 @@
 import React from "react";
 import Expense from "./Expense";
+import "./DisplayExpense.css";
 
 
 
 function DisplayExpense(props){
     return (
-        <div>
+        <div className = "display-expenses">
             <Expense 
                 name={props.expenses[0].name}
                 date={props.expenses[0].date}
