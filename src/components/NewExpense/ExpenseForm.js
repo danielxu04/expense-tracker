@@ -5,9 +5,9 @@ import CreateExpenseForm from "./CreateExpenseForm";
 
 function ExpenseForm (){
     return (
-    <> 
+    <div className = "expense-form-container"> 
         <CreateExpenseForm />
-    </>
+    </div >
     );
 }
 

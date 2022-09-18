@@ -1,0 +1,61 @@
+.expense-form-container{
+    position: relative;
+    background: #F9C5D5;
+    text-align: center;
+    border-radius: 15px;
+    width: 40rem;
+    margin: 40px auto;
+    padding: 3rem 0;
+    box-shadow: 0 8px 14px rgba(133, 14, 53, 0.3);
+}
+
+.expense-form-container::before, 
+.expense-form-container::after{
+    content: '';
+    z-index: -1;
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+    top: -9px;
+    left: -9px;
+    position: absolute;
+    background: linear-gradient(45deg, 
+        #dc1c13, #ea4c46, #f07470, #f1959b, #f9c5d5, 
+        #f999b7, #f2789f, #f07470, #ea4c46, #dc1c13
+    );
+    border-radius: 20px;
+
+
+/****************************     ANIMATION     ****************************/
+    background-size: 300%;
+    animation: border 10s linear infinite;
+
+}
+
+@keyframes border{
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+}
+
+.expense-form-container::after{
+    filter: blur(25px);
+}
+
+
+
+/************************************* BUTTON ***********************************/
+
+.expense-form-container button{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: solid 1px;
+    border-color: #EE6983;
+    color: white;
+    background-color: #EE6983;
+    border-radius: 14px;
+    
+}
