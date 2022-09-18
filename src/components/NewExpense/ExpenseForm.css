@@ -45,8 +45,6 @@
     filter: blur(25px);
 }
 
-
-
 /************************************* BUTTON ***********************************/
 
 .expense-form-container button{
@@ -57,5 +55,14 @@
     color: white;
     background-color: #EE6983;
     border-radius: 14px;
-    
+    margin-top: 15px;
+    margin-bottom: 0;
+    transition:0.4s;
+}
+
+.expense-form-container button:hover,
+.expense-form-container button:active {
+  background-color: #D65E75;
+  border-color: #D65E75;
+  transform:scale(1.1);
 }
