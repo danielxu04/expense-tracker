@@ -1,0 +1,35 @@
+.form-items{
+    /** container properties **/
+    display: flex;
+    flex-wrap: wrap;
+
+    /** positioning **/
+    margin-bottom: 1rem;
+    gap: 1rem;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+/*********************** ITEMS ***********************/
+
+.form-item label{
+    display: block;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: #EE6983;;
+    font-weight: bold;
+}
+
+.form-item input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #EE6983;
+    width: 18rem;
+  }
+
+
+  /*********************** WEBKIT PSEUDO ELEMENTS **********************************/
+  ::-webkit-datetime-edit-month-field { color: #EE6983; }
+  ::-webkit-datetime-edit-day-field { color: #EE6983; }
+  ::-webkit-datetime-edit-year-field { color: #EE6983; }
+  ::-webkit-datetime-edit-text { color: #EE6983; padding: 0 0.2em; }

@@ -9,6 +9,9 @@
     box-shadow: 0 8px 14px rgba(133, 14, 53, 0.3);
 }
 
+
+/***************************** GRADIENT *************************************/
+
 .expense-form-container::before, 
 .expense-form-container::after{
     content: '';
