@@ -8,7 +8,7 @@ function CreateExpenseForm(){
     let [enterItem, setItem] = useState({
         expense: "",
         price: "",
-        date: ""
+        date: new Date("")
     });
 
     const expenseChanger = event => {
@@ -29,8 +29,13 @@ function CreateExpenseForm(){
         });
     };
 
+    const submitter = (event) => {
+        event.preventDefault(); /* continue handling with javascript */
 
-    return (<form>
+        console.log(enterItem);
+    }
+
+    return (<form onSubmit={submitter}>
         <div className="form-items">
             <div className="form-item">
                 <label>Expense</label>
