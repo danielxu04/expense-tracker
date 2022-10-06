@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import "./CreateExpenseForm.css";
 
-function CreateExpenseForm(){
+function CreateExpenseForm(props){
 
 /*
     STORE USERINPUT - using OBJECT
@@ -60,7 +60,7 @@ function CreateExpenseForm(){
             date: new Date(dateItem)
         };
 
-        console.log(expenseItems);
+        props.newExpenseData(expenseItems);
 
         /* Reset Items */
         setTitleItem('');
