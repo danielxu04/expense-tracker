@@ -6,9 +6,15 @@ import "./DisplayExpense.css";
 
 
 function DisplayExpense(props){
+
+    const dateChangeManager = changedYear => {
+        console.log("DisplayExpense:");
+        console.log(changedYear);
+    }
+    
     return (
         <div className = "display-expenses">
-            <FilterExpenseYear />
+            <FilterExpenseYear dateChangePasser={dateChangeManager}/>
             <Expense 
                 name={props.expenses[0].name}
                 date={props.expenses[0].date}
