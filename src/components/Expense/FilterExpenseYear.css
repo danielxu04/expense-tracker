@@ -1,6 +1,25 @@
 .dropdown-container{
-    padding: 0 1rem;
+    padding: 0;
+    padding-right: 1.5rem;
     color: #EE6983;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
+
+.dropdown-container select{
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #EE6983;
+}
+
+.dropdown-selectors{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
