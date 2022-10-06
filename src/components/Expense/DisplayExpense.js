@@ -1,5 +1,6 @@
 import React from "react";
 import Expense from "./Expense";
+import FilterExpenseYear from "./FilterExpenseYear";
 import "./DisplayExpense.css";
 
 
@@ -7,6 +8,7 @@ import "./DisplayExpense.css";
 function DisplayExpense(props){
     return (
         <div className = "display-expenses">
+            <FilterExpenseYear />
             <Expense 
                 name={props.expenses[0].name}
                 date={props.expenses[0].date}
