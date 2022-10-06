@@ -3,7 +3,7 @@ import React from "react";
 import "./ExpenseForm.css";
 import CreateExpenseForm from "./CreateExpenseForm";
 
-function ExpenseForm (){
+function ExpenseForm (props){
     function uniqueId(){
         return Math.floor((Math.random() + 1) * 0x10000).toString(16).substring(1);
     }
@@ -14,7 +14,7 @@ function ExpenseForm (){
             id: uniqueId()
         };
 
-        console.log(data);
+        props.addExpense(data);
     };
 
     return (

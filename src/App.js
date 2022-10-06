@@ -6,10 +6,15 @@ import ExpenseForm from "./components/NewExpense/ExpenseForm";
 
 function App() {
 
+  const addExpenseDataPasser = expense => {
+    console.log("In App");
+    console.log(expense);
+  }
+
   return ( 
   <>
 
-    <ExpenseForm />
+    <ExpenseForm addExpense={addExpenseDataPasser} />
 
     <DisplayExpense expenses={expenses}/>
   </>
