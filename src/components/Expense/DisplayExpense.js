@@ -15,26 +15,13 @@ function DisplayExpense(props){
     return (
         <div className = "display-expenses">
             <FilterExpenseYear dateChangePasser={dateChangeManager}/>
+            {props.expenses.map(expense => (
             <Expense 
-                name={props.expenses[0].name}
-                date={props.expenses[0].date}
-                price={props.expenses[0].price}
+                name={expense.name} 
+                date={expense.date} 
+                price={expense.price}
             />
-            <Expense 
-                name={props.expenses[1].name}
-                date={props.expenses[1].date}
-                price={props.expenses[1].price}
-            />
-            <Expense 
-                name={props.expenses[2].name}
-                date={props.expenses[2].date}
-                price={props.expenses[2].price}
-            />
-            <Expense 
-                name={props.expenses[3].name}
-                date={props.expenses[3].date}
-                price={props.expenses[3].price}
-            />
+            ))}
         </div>
     );
 }
