@@ -11,7 +11,7 @@ function ExpenseForm (props){
     const passNewExpenseData = (expenseData) => {
         const data = {
             ...expenseData,
-            id: uniqueId()
+            key: uniqueId()
         };
 
         props.addExpense(data);

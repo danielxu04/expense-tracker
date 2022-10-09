@@ -3,39 +3,6 @@ import React, {useState} from "react";
 import "./CreateExpenseForm.css";
 
 function CreateExpenseForm(props){
-
-/*
-    STORE USERINPUT - using OBJECT
-
-    let [enterItem, setItem] = useState({
-        expense: '',
-        price: '',
-        date: new Date('')
-    });
-
-    const expenseChanger = event => {
-        setItem( (prevState) => {
-            return {...prevState, expense: event.target.value};
-        });
-    };
-
-    const priceChanger = event => {
-        setItem( (prevState) => {
-            return {...prevState, price: event.target.value};
-        });
-    };
-
-    const dateChanger = event => {
-        setItem( (prevState) => {
-            return {...prevState, date: event.target.value}
-        });
-    };
-
-    const submitter = (event) => {
-        event.preventDefault(); 
-        console.log(enterItem);
-    }
-*/
     const [titleItem, setTitleItem] = useState('');
     const [priceItem, setPriceItem] = useState('');
     const [dateItem, setDateItem] = useState('');
