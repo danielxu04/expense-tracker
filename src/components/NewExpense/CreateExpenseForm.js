@@ -55,7 +55,7 @@ function CreateExpenseForm(props){
         event.preventDefault();
 
         const expenseItems = {
-            title: titleItem,
+            name: titleItem,
             price: priceItem,
             date: new Date(dateItem)
         };

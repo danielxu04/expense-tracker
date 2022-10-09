@@ -17,8 +17,8 @@ function DisplayExpense(props){
             <FilterExpenseYear dateChangePasser={dateChangeManager}/>
             {props.expenses.map(expense => (
             <Expense 
-                name={expense.name} 
-                date={expense.date} 
+                name={expense.name}
+                date={expense.date}
                 price={expense.price}
             />
             ))}
