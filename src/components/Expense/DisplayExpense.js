@@ -1,15 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import Expense from "./Expense";
 import FilterExpenseYear from "./FilterExpenseYear";
 import "./DisplayExpense.css";
 
 function DisplayExpense(props){
 
-    const [changedDate, setChangedDate] = useState("2020");
+    const [changedDate, setChangedDate] = useState('2022');
 
     const dateChangeManager = changedYear => {
         setChangedDate(changedYear);
     }
+
+    const filteredExpenseItems = props.expenses.filter(expense => {
+        return expense.date.getFullYear().toString() === changedDate;
+    });
 
     return (
         <div className = "display-expenses">
@@ -18,7 +22,7 @@ function DisplayExpense(props){
             dateChangePasser={dateChangeManager}
             />
             
-            {props.expenses.map(expense => (
+            {filteredExpenseItems.map(expense => (
             <Expense 
                 key={expense.key}
                 name={expense.name}
