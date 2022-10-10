@@ -5,14 +5,19 @@ import "./DisplayExpense.css";
 
 function DisplayExpense(props){
 
+    const [changedDate, setChangedDate] = useState("2020");
+
     const dateChangeManager = changedYear => {
-        console.log("DisplayExpense:");
-        console.log(changedYear);
+        setChangedDate(changedYear);
     }
 
     return (
         <div className = "display-expenses">
-            <FilterExpenseYear dateChangePasser={dateChangeManager}/>
+            <FilterExpenseYear 
+            selectedDate = {changedDate}
+            dateChangePasser={dateChangeManager}
+            />
+            
             {props.expenses.map(expense => (
             <Expense 
                 key={expense.key}
