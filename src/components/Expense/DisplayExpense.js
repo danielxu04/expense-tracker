@@ -15,21 +15,25 @@ function DisplayExpense(props){
         return expense.date.getFullYear().toString() === changedDate;
     });
 
-    return (
-        <div className = "display-expenses">
-            <FilterExpenseYear 
-            selectedDate = {changedDate}
-            dateChangePasser={dateChangeManager}
-            />
-            
-            {filteredExpenseItems.map(expense => (
+    let expenseDisplay = <p>No Expenses Found...</p>;
+
+    if(filteredExpenseItems.length > 0){
+        expenseDisplay = filteredExpenseItems.map(expense => (
             <Expense 
                 key={expense.key}
                 name={expense.name}
                 date={expense.date}
                 price={expense.price}
             />
-            ))}
+        ));
+    }
+    return (
+        <div className = "display-expenses">
+            <FilterExpenseYear 
+            selectedDate = {changedDate}
+            dateChangePasser={dateChangeManager}
+            />
+            {expenseDisplay}
         </div>
     );
 }
