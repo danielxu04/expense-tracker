@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Expense from "./Expense";
 import FilterExpenseYear from "./FilterExpenseYear";
+import ExpenseList from "./ExpenseList";
 import "./DisplayExpense.css";
 
 function DisplayExpense(props){
@@ -15,25 +15,14 @@ function DisplayExpense(props){
         return expense.date.getFullYear().toString() === changedDate;
     });
 
-    let expenseDisplay = <p>No Expenses Found...</p>;
 
-    if(filteredExpenseItems.length > 0){
-        expenseDisplay = filteredExpenseItems.map(expense => (
-            <Expense 
-                key={expense.key}
-                name={expense.name}
-                date={expense.date}
-                price={expense.price}
-            />
-        ));
-    }
     return (
         <div className = "display-expenses">
             <FilterExpenseYear 
             selectedDate = {changedDate}
             dateChangePasser={dateChangeManager}
             />
-            {expenseDisplay}
+            <ExpenseList expenses={filteredExpenseItems}/>
         </div>
     );
 }

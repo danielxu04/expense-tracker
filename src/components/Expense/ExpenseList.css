@@ -1,0 +1,15 @@
+.no-expense{
+    position: relative;
+    color: #FFB6B9;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.05vw #FF9397;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+}
