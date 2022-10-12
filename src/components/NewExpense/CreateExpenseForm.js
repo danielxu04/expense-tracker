@@ -51,7 +51,8 @@ function CreateExpenseForm(props){
             </div>
         </div>
 
-        <div>
+        <div className="submit-button">
+            <button type="button" onClick={props.b}>Cancel</button>
             <button type="submit">Submit Expense</button>
         </div>
     </form>

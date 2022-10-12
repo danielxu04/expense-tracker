@@ -15,6 +15,7 @@ function ExpenseForm (props){
             key: uniqueId()
         };
         props.addExpense(data);
+        setDisplayForm(false);
     };
 
     const [displayForm, setDisplayForm] = useState(false);
@@ -22,11 +23,14 @@ function ExpenseForm (props){
     const editForm = () => {
         setDisplayForm(true);
     }
+    const showButton = () => {
+        setDisplayForm(false);
+    }
 
     let buttonOrForm = <button onClick={editForm}>Add Expense</button>;
 
     if(displayForm){
-        buttonOrForm = <CreateExpenseForm newExpenseData={passNewExpenseData}/>;
+        buttonOrForm = <CreateExpenseForm newExpenseData={passNewExpenseData} b={showButton}/>;
     }
 
     return (
