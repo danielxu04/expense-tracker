@@ -8,8 +8,12 @@
   }
 
 .display-expenses p{
-  color: #EE6983;
+  position: relative;
+  color: #FFB6B9;
   padding-left: 1rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.05vw #FF9397;
+  text-transform: uppercase;
 }
+
