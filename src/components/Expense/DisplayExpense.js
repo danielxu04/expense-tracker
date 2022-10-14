@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import FilterExpenseYear from "./FilterExpenseYear";
 import ExpenseList from "./ExpenseList";
 import "./DisplayExpense.css";
+import DisplayExpenseChart from "./DisplayExpenseChart";
 
 function DisplayExpense(props){
 
@@ -22,7 +23,8 @@ function DisplayExpense(props){
             selectedDate = {changedDate}
             dateChangePasser={dateChangeManager}
             />
-            <ExpenseList expenses={filteredExpenseItems}/>
+            <DisplayExpenseChart expenseList={filteredExpenseItems} />
+            <ExpenseList expenses={filteredExpenseItems} />
         </div>
     );
 }
