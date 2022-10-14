@@ -1,9 +1,10 @@
 .expense-chart{
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: #FFF5E4;
-    text-align: center;
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem 0;
+    border-radius: 15px;
+    background-color: #FFF5E4;
     height: 10rem;
 }
