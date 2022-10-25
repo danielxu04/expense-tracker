@@ -23,7 +23,7 @@ function CreateExpenseForm(props){
 
         const expenseItems = {
             name: titleItem,
-            price: priceItem,
+            price: parseFloat(priceItem),
             date: new Date(dateItem)
         };
 

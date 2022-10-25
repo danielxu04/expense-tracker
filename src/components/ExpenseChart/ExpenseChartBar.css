@@ -20,7 +20,7 @@
   .fill-bar {
     background-color: #EE6983;
     width: 100%;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
   
   .label-bar {

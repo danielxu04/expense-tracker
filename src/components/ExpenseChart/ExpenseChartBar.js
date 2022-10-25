@@ -6,14 +6,21 @@ function ExpenseChartBar(props){
     let barHeight = '0%';
 
     if(props.maxVal > 0){
-        barHeight = Math.round((props.value / props.maxVal) * 100) + "%";
+        console.log(props.maxVal);
+        barHeight = (Math.round((props.val / props.maxVal) * 100)) + '%';
+        console.log(barHeight);
     }
-    return <div className="chart-bar">
+    return (
+    <div className="chart-bar">
         <div className="inner-chart">
-            <div className="fill-bar" style={{height: barHeight}}></div>
+            <div
+                className="fill-bar" 
+                style={{height: barHeight}}
+            ></div>
         </div>
         <div className="label-bar">{props.label}</div>
     </div>
+    );
 }
 
 

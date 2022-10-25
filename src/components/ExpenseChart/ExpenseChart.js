@@ -1,7 +1,6 @@
 import React from "react";
 
 import ExpenseChartBar from "./ExpenseChartBar";
-
 import "./ExpenseChart.css";
 
 function ExpenseChart(props){
