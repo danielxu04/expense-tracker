@@ -1,3 +1,3 @@
 # Expense Tracker
 
-A React.js app that will track your annual expenses by month.
+A React.js app to help you track your annual expenses by month.
